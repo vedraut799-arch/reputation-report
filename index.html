@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Public Reputation Report</title>
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <style>
+    body {
+      background: #0b0b0b;
+      color: white;
+      font-family: Arial;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .card {
+      background: #111;
+      padding: 30px;
+      border-radius: 12px;
+      text-align: center;
+      width: 320px;
+    }
+    button {
+      margin-top: 20px;
+      padding: 12px 20px;
+      font-size: 16px;
+      background: #000;
+      color: #fff;
+      border: 1px solid #444;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <h2>Public Reputation Report</h2>
+    <p>Most people never see this.</p>
+
+    <button id="payBtn">Unlock Full Report – ₹5</button>
+  </div>
+
+<script>
+document.getElementById("payBtn").onclick = function () {
+  var options = {
+    key: "YOUR_RAZORPAY_KEY_ID",
+    amount: 500,
+    currency: "INR",
+    name: "Public Reputation Report",
+    description: "Unlock full report",
+    handler: function () {
+      window.location.href = "unlocked.html";
+    }
+  };
+  var rzp = new Razorpay(options);
+  rzp.open();
+};
+</script>
+
+</body>
+</html>
