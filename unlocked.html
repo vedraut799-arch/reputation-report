@@ -1,32 +1,85 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Your Report</title>
+  <title>Your Public Reputation Report</title>
   <style>
     body {
-      background: #000;
-      color: white;
-      font-family: Arial, sans-serif;
+      background: #0b0b0b;
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      padding: 20px;
+      min-height: 100vh;
     }
     .card {
       background: #111;
+      border-radius: 15px;
       padding: 30px;
-      border-radius: 12px;
-      width: 320px;
+      max-width: 400px;
+      text-align: left;
+      box-shadow: 0 0 20px rgba(255,255,255,0.1);
+    }
+    h1, h2 {
       text-align: center;
+      color: #f1c40f;
+    }
+    p {
+      line-height: 1.4;
+      margin-bottom: 12px;
+    }
+    .section-title {
+      color: #3498db;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+    .score {
+      font-weight: bold;
+      color: #2ecc71;
     }
   </style>
 </head>
-
 <body>
   <div class="card">
-    <h2>Your Public Reputation</h2>
-    <p>You are perceived as:</p>
-    <b>⚠ Highly influential but misunderstood</b>
+    <h1>Public Reputation Report</h1>
+    <h2>Generated For You</h2>
+
+    <p>Based on your responses, this report evaluates your influence, perception, and impact among peers.</p>
+
+    <div class="section">
+      <p class="section-title">Influence Index:</p>
+      <p class="score">78%</p>
+      <p>You have a notable ability to inspire and affect opinions. People often unconsciously notice your presence and take your insights seriously.</p>
+    </div>
+
+    <div class="section">
+      <p class="section-title">Trustworthiness Score:</p>
+      <p class="score">82%</p>
+      <p>Based on your behavioral patterns, you are seen as reliable and competent. Colleagues and friends tend to seek your advice in ambiguous situations.</p>
+    </div>
+
+    <div class="section">
+      <p class="section-title">Social Awareness:</p>
+      <p class="score">75%</p>
+      <p>You appear highly aware of social dynamics, which allows you to navigate interactions effectively. People perceive you as considerate yet strategic.</p>
+    </div>
+
+    <div class="section">
+      <p class="section-title">Hidden Insights:</p>
+      <p>Your subtle actions reveal a level of self-discipline and foresight most overlook. This often positions you as someone who quietly influences outcomes without being noticed.</p>
+    </div>
+
+    <div class="section">
+      <p class="section-title">Recommended Focus:</p>
+      <ul>
+        <li>Leverage your influence for leadership roles.</li>
+        <li>Continue cultivating trust and reliability.</li>
+        <li>Observe social interactions to predict opportunities.</li>
+      </ul>
+    </div>
+
+    <p style="text-align:center; margin-top:20px; color:#f39c12;"><em>Note: This report is a synthesized analysis based on your interactions and quiz answers.</em></p>
   </div>
 </body>
 </html>
